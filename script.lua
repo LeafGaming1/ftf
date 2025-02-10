@@ -39,7 +39,7 @@ local Window = Rayfield:CreateWindow({
 
 -- Tabs
 local Home = Window:CreateTab("Home", 13209388803)
-local Esp = Window:CreateTab("Esp", 13209481800)
+local Esp = Window:CreateTab("Esp (EXPECT BUGS)", 13209481800)
 local Beast = Window:CreateTab("Beast", 13209523447)
 local NBeast = Window:CreateTab("Non-Beast", 13209387638)
 local Player = Window:CreateTab("Player", 13209386618)
