@@ -700,10 +700,11 @@ local Button = Player:CreateButton({
    Name = "Reload",
    Callback = function()
 	task.spawn(function()
+		task.wait(1)
 		Rayfield:Destroy()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LeafGaming1/RobloxStuff/main/FleeTheFacility/Script.lua"))()
 	end)
-	task.wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LeafGaming1/RobloxStuff/main/FleeTheFacility/Script.lua"))()
+	task.wait(2)
 	script.Enabled = false
    end,
 })
