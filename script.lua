@@ -663,7 +663,9 @@ end,
 local Button = Player:CreateButton({
    Name = "Rejoin",
    Callback = function()
-        if #Players:GetPlayers() <= 1 then
+	if identifyexecutor() == "Solara" then
+	    Rayfield:Notify({Title = "Feature disabled.", Content = "This feature is not supported by your executor ("..identifyexecutor()..").", Duration = 7, Image = 4400697855})
+        elseif #Players:GetPlayers() <= 1 then
             Players.LocalPlayer:Kick("\nRejoining...")
             wait()
             TeleportService:Teleport(PlaceId, Players.LocalPlayer)
