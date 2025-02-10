@@ -403,13 +403,15 @@ local Section = Player:CreateSection("Player")
 local Button = Player:CreateButton({
    Name = "Respawn",
    Callback = function()
-local plr = game.Players.LocalPlayer
-plr.Character:Destroy()
+   Rayfield:Notify({Title = "Feature disabled.", Content = "This feature is disabled for security purposes.", Duration = 7, Image = 4400697855})
+--[[local plr = game.Players.LocalPlayer
+plr.Character:Destroy()			
+]]
 end,
 })
 
 local Button = Player:CreateButton({
-   Name = "Invisible (F) must disable anticheat",
+   Name = "Invisible (must disable anticheat)",
    Callback = function()
    Rayfield:Notify({Title = "Feature disabled.", Content = "This feature is disabled for security purposes.", Duration = 7, Image = 4400697855})
 --[[local Global = getgenv and getgenv()
